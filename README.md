@@ -6,6 +6,7 @@ This is minimum demo of headless chrome, java and selenium on container image on
 
 ```bash
 $ npm install -g serverless # skip this line if you have already installed Serverless Framework
+$ sls plugin install -n serverless-scriptable-plugin # install serverless-scriptable-plugin
 $ export AWS_REGION=ap-northeast-1 # You can specify region or skip this line. us-east-1 will be used by default.
 $ sls create --template-url "https://github.com/tolkonepiu/java-selenium-lambda/tree/main" --path java-selenium-lambda && cd $_
 $ sls deploy

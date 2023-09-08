@@ -10,6 +10,14 @@ provider:
         path: ./
         platform: linux/amd64
 
+plugins:
+  - serverless-scriptable-plugin
+
+custom:
+  scriptable:
+    hooks:
+      before:package:createDeploymentArtifacts: mvn clean && mvn package
+
 functions:
   demo:
     timeout: 60
